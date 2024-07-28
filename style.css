@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to top left, #01666b, #a7f1e9);
+}
+
+.show-modal,
+.btn {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+.btn {
+  background-color: rgb(246, 231, 67);
+}
+.show-modal:hover,
+.btn:hover {
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.facts-num {
+  color: rgb(246, 231, 67);
+  font-weight: 800;
+}
+p {
+  font-size: 1.8rem;
+}
+
+.hidden,
+.hidden-1,
+.hidden-2,
+.hidden-3,
+.hidden-4,
+.hidden-5,
+.hidden-6,
+.hidden-7,
+.hidden-8,
+.hidden-9,
+.hidden-10,
+.hidden-11,
+.hidden-12,
+.hidden-13,
+.hidden-14,
+.hidden-15,
+.hidden-16,
+.hidden-17,
+.hidden-18,
+.hidden-19,
+.hidden-20 {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
